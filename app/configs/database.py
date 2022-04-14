@@ -13,3 +13,6 @@ def init_app(app: Flask):
     app.db = db
 
     # Declarar as models para serem reconhecidas pelo SQLALCHEMY
+    from app.models.band_model import Band
+    from app.models.album_model import Album
+    from app.models.music_model import Music
